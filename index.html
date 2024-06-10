@@ -1,21 +1,59 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
+    <meta name="description" content="Découvrez Sun Solar Tek - votre partenaire pour des panneaux solaires de qualité à des prix compétitifs." />
+    <meta name="keywords" content="panneaux solaires, énergie renouvelable, solaire, Sun Solar Tek, installations solaires" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Sun Solar Tek - Le Solaire à Bas Prix" />
+    <meta property="og:description" content="Découvrez Sun Solar Tek - votre partenaire pour des panneaux solaires de qualité à des prix compétitifs." />
+    <meta property="og:image" content="http://www.sunsolartek.com/assets/images/fav.svg" />
+    <meta property="og:url" content="http://www.sunsolartek.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sun Solar Tek - Le Solaire à Bas Prix" />
+    <meta name="twitter:description" content="Découvrez Sun Solar Tek - votre partenaire pour des panneaux solaires de qualité à des prix compétitifs." />
+    <meta name="twitter:image" content="http://www.sunsolartek.com/assets/images/fav.svg" />
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Sun Solar Tek",
+      "url": "http://www.sunsolartek.com",
+      "logo": "http://www.sunsolartek.com/assets/images/fav.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+33-468-512354",
+        "contactType": "Customer Service",
+        "areaServed": "FR",
+        "availableLanguage": "French"
+      },
+      "sameAs": [
+        "http://www.facebook.com/sunsolartek",
+        "http://www.twitter.com/sunsolartek",
+        "http://www.linkedin.com/company/sunsolartek"
+      ]
+    }
+    </script>
 
     <!-- Site Title -->
     <title>Sun Solar Tek - Le Solaire à Bas Prix</title>
 
     <!-- Place favicon.ico in the root directory -->
     <link rel="apple-touch-icon" href="assets/images/fav.svg" />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="assets/images/fav.svg"
-    />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.svg" />
+
+    <!-- Preconnect to required origins for performance improvement -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- CSS here -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -26,21 +64,19 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.css" />
     <link rel="stylesheet" href="assets/css/meanmenu.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
+
   </head>
 
   <body>
     <!-- Preloader start -->
-    <div id="preloader" class="preloader">
+    <div id="preloader" class="preloader" aria-hidden="true">
       <div class="animation-preloader">
-        <div class="spinner">
+        <div class="spinner" role="status" aria-label="Loading">
           <div class="loader-icon">
-            <img
-              src="assets/images/fav.svg"
-              alt="Solar & Renewable Energy HTML Template"
-            />
+            <img src="assets/images/fav.svg" alt="Logo Sun Solar Tek" />
           </div>
         </div>
-        <div class="txt-loading">
+        <div class="txt-loading" aria-live="polite">
           <span data-text-preloader="S" class="letters-loading"> S </span>
           <span data-text-preloader="U" class="letters-loading"> U </span>
           <span data-text-preloader="N" class="letters-loading"> N </span>
@@ -57,202 +93,83 @@
           <span data-text-preloader="K" class="letters-loading"> K </span>
         </div>
       </div>
-      <button class="tj-header-btn btn">Cancel Preloader</button>
+      <button class="tj-header-btn btn" aria-label="Annuler le Préchargement">Annuler le Préchargement</button>
     </div>
     <!-- Preloader end -->
 
     <!-- start: Offcanvas Area -->
-    <div id="tj-overlay-bg" class="tj-overlay-canvas"></div>
-    <div class="tj-offcanvas-area">
-      <div
-        class="tj-offcanvas-header d-flex align-items-center justify-content-between"
-      >
+    <div id="tj-overlay-bg" class="tj-overlay-canvas" aria-hidden="true"></div>
+    <div class="tj-offcanvas-area" aria-hidden="true">
+      <div class="tj-offcanvas-header d-flex align-items-center justify-content-between">
         <div class="logo-area text-center">
-          <a href="index.html"
-            ><img src="assets/images/logos/main-logo.png" alt="Logo"
-          /></a>
+          <a href="index.html"><img src="assets/images/logos/main-logo.png" alt="Logo Sun Solar Tek" /></a>
         </div>
         <div class="offcanvas-icon">
-          <a id="canva_close" href="#">
+          <a id="canva_close" href="#" aria-label="Close offcanvas menu">
             <i class="fa-light fa-xmark"></i>
           </a>
         </div>
       </div>
-      <div class="tj-search-box">
-        <form action="#">
-          <input
-            type="text"
-            class="form-control-1"
-            name="search"
-            id="search"
-            placeholder="Search"
-          />
-          <a href="#"> <i class="fal fa-search"></i></a>
-        </form>
-      </div>
+
       <!-- Canvas Mobile Menu start -->
-      <nav
-        class="right_menu_togle mobile-navbar-menu d-lg-none"
-        id="mobile-navbar-menu"
-      ></nav>
+      <nav class="right_menu_togle mobile-navbar-menu d-lg-none" id="mobile-navbar-menu" role="navigation" aria-label="Mobile Navigation"></nav>
       <div class="canvas-content-area d-none d-lg-block">
         <div class="contact-info-list">
           <p class="des">
-            We take a bottom-line approach to each project. Our clients
-            consistently, enhanced brand loyalty and new leads thanks to our
-            work.
+            Nous adoptons une approche pragmatique pour chaque projet. Nos clients constatent une fidélité accrue à leur marque et de nouveaux prospects grâce à notre travail.
           </p>
           <div class="canvas-title">
-            <h4 class="title">Contact info</h4>
+            <h4 class="title">Contact</h4>
           </div>
           <div class="footer-contact">
             <ul>
               <li>
-                <i class="flaticon-location"></i> 2972 Westheimer Rd. Santa Ana,
-                Illinois 937949
+                <i class="flaticon-location"></i> 18 Rue du Camp Nou, 66600 PERPIGNAN
               </li>
               <li>
                 <i class="flaticon-open"></i>
-                <a href="mailto:solarplus@gmail.com">Solarplus@gmail.com </a>
-                <a href="mailto:infosolarplus@gmail.com"
-                  >infosolarplus@gmail.com</a
-                >
+                <a href="mailto:SunSolarTeck@gmail.com">SunSolarTeck@gmail.com</a>
+                <a href="mailto:supportsunsolarteck@gmail.com">supportsunsolarteck@gmail.com</a>
               </li>
               <li>
-                <i class="flaticon-phone"></i
-                ><a href="tel:(1234)5678900">(1234)-567-8900 </a>
-                <a class="d-block" href="tel:1234567890000">123-456-7890000</a>
+                <i class="flaticon-phone"></i>
+                <a href="tel:+331234567890">04 68 51 23 54</a>
+                <a class="d-block" href="tel:+33758951436">07 58 95 14 36</a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="offcanvas-share">
-          <div class="canvas-title">
-            <h4 class="title">Social Icons</h4>
-          </div>
-          <ul>
-            <li>
-              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            </li>
-          </ul>
-        </div>
         <div class="contact-map">
           <iframe
-            src="https://maps.google.com/maps?q=manhatan&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+            src="https://maps.google.com/maps?q=perpignan&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
             style="border: 0"
             allowfullscreen=""
+            aria-hidden="true"
+            tabindex="-1"
           ></iframe>
         </div>
       </div>
     </div>
     <!-- end: Offcanvas Area -->
 
-    <!-- start: Search Popup -->
-    <div class="search_popup">
-      <div class="container">
-        <div class="row">
-          <div class="col-xxl-12">
-            <div class="search_wrapper">
-              <div
-                class="search_top d-flex justify-content-between align-items-center"
-              >
-                <div class="search_logo">
-                  <a href="index.html">
-                    <img src="assets/images/logos/main-logo.png" alt="Logo" />
-                  </a>
-                </div>
-                <div class="search_close">
-                  <button type="button" class="search_close_btn">
-                    <svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 18 18"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M17 1L1 17"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M1 1L17 17"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="search_form">
-                <form action="#">
-                  <div class="search_input">
-                    <input
-                      class="search-input-field"
-                      type="text"
-                      placeholder=""
-                    />
-                    <span class="search-focus-border"></span>
-                    <button type="submit">
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M9.55 18.1C14.272 18.1 18.1 14.272 18.1 9.55C18.1 4.82797 14.272 1 9.55 1C4.82797 1 1 4.82797 1 9.55C1 14.272 4.82797 18.1 9.55 18.1Z"
-                          stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M19.0002 19.0002L17.2002 17.2002"
-                          stroke="currentColor"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="search-popup-overlay"></div>
-    <!-- end: Search Popup -->
-
     <!-- start: Header Area -->
-    <header class="tj-header-area header-absolute header-sticky">
+    <header class="tj-header-area header-absolute header-sticky" role="banner">
       <div class="tj-top-content-area">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-xl-3 col-lg-2 col-md-3 col-4">
+            <div class="col-xl-3 col-lg-2 col-md-3 col-4 custom-col">
               <div class="logo-area">
-                <a href="index-2.html"
-                  ><img src="assets/images/logos/main-logo.png" alt="Logo"
-                /></a>
+                <a href="index-2.html">
+                  <img src="assets/images/logos/main-logo.png" alt="Logo Sun Solar Tek" />
+                </a>
               </div>
             </div>
             <div class="col-xl-7 col-lg-8 col-md-6 col-4">
               <div class="tj-menu-area d-lg-block d-none" id="main-menu">
-                <nav id="mobile-menu">
+                <nav id="mobile-menu" role="navigation" aria-label="Primary Navigation">
                   <ul>
                     <li>
-                      <a href="index-2.html">Accueil</a>
+                      <a href="index.html">Accueil</a>
                     </li>
                     <li class="has-dropdown">
                       <a href="services.html">Panneaux Solaires</a>
@@ -266,23 +183,12 @@
                       </ul>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Qui sommes nous ?</a>
+                      <a href="about-us.html">Qui sommes nous ?</a>
                     </li>
-                    <li class="has-dropdown">
-                      <a href="blog.html">Blog</a>
-                      <ul class="sub-menu">
-                        <li>
-                          <a href="blog-grid.html">Actualités</a>
-                        </li>
-                        <li>
-                          <a href="blog.html">Réalisations</a>
-                        </li>
-                        <li>
-                          <a href="blog-details.html">Témoignages</a>
-                        </li>
-                      </ul>
+                    <li>
+                      <a href="blog.html">Réalisations</a>
                     </li>
-                    <li><a href="contact.html">Nous Contacter</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                   </ul>
                 </nav>
               </div>
@@ -291,17 +197,10 @@
               <div class="info-right-item">
                 <div class="info-navbar">
                   <ul>
-                    <li class="header_searce">
-                      <button class="search-btn">
-                        <i class="flaticon-search"></i>
-                      </button>
-                    </li>
                     <li>
-                      <a
-                        class="canva_expander nav-menu-link menu-button"
-                        href="#"
-                        ><i class="flaticon-menu"></i
-                      ></a>
+                      <a class="canva_expander nav-menu-link menu-button" href="#" aria-label="Expand Menu">
+                        <i class="flaticon-menu"></i>
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -311,21 +210,22 @@
         </div>
       </div>
     </header>
+    <!-- end: Header Area -->
 
     <main class="site-main">
       <section
         class="tj-hero-section"
-        data-bg-image="assets/images/banner/hero-bg.jpg"
+        style="background-image: url('assets/images/banner/hero-bg.jpg');"
       >
         <div class="container">
           <div class="row">
             <div class="col-lg-12 col-md-8">
-              <div class="hero-content-ara">
+              <div class="hero-content-area">
                 <div class="tj-sec-heading">
                   <span class="sub-title">Énergie Solaire</span>
                   <h1 class="sec-title">
-                    Une solution <span>Durable</span> pour votre maison dès
-                    <span>4999.99 €</span>
+                    Une solution <span>Durable</span> pour votre maison à partir de
+                    <span>5000 €</span>
                   </h1>
                   <div class="desc">
                     <p>
@@ -336,7 +236,7 @@
                     </p>
                   </div>
                   <div class="tj-hero-button">
-                    <a class="tj-primary-btn2 btn" href="contact.html">
+                    <a class="tj-primary-btn2 btn" href="service-details.html">
                       Estimation Sur Mesure <i class="flaticon-right-arrow"></i>
                     </a>
                   </div>
@@ -347,7 +247,7 @@
         </div>
         <div class="hero-wrapper">
           <div class="hero-feature-image">
-            <img src="assets/images/banner/feature-bg.jpg" alt="Image" />
+            <img src="assets/images/banner/feature-bg.jpg" alt="Feature Image" />
           </div>
           <div class="circle-box">
             <div class="video-play">
@@ -355,23 +255,19 @@
                 class="venobox popup-videos-button"
                 data-autoplay="true"
                 data-vbtype="video"
-                href="https://www.youtube.com/watch?v=ADmQTw4qqTY"
+                href="https://www.youtube.com/"
+                aria-label="Play Video"
               >
                 <i class="fa-solid fa-play"></i>
-                <svg
-                  class="shape-1"
-                  viewBox="0 0 100 100"
-                  width="150"
-                  height="100"
-                >
+                <svg class="shape-1" viewBox="0 0 100 100" width="150" height="100">
                   <defs>
                     <path
                       id="circle"
                       d="
-                                          M 50, 50
-                                          m -37, 0
-                                          a 37,37 0 1,1 74,0
-                                          a 37,37 0 1,1 -74,0"
+                        M 50, 50
+                        m -37, 0
+                        a 37,37 0 1,1 74,0
+                        a 37,37 0 1,1 -74,0"
                     />
                   </defs>
                   <text font-size="16">
@@ -386,7 +282,7 @@
         </div>
       </section>
       <!--=========== Slider Section End =========-->
-
+    
       <!--=========== About Section Start =========-->
       <section class="tj-about-section-two">
         <div class="container">
@@ -394,16 +290,16 @@
             <div class="col-xl-6 col-lg-12">
               <div class="about-image-group-two">
                 <div class="group-1">
-                  <img src="assets/images/about/about-2.jpg" alt="Image" />
+                  <img src="assets/images/about/about-2.jpg" alt="About Image 2" />
                 </div>
                 <div class="group-2">
-                  <img src="assets/images/about/about-3.jpg" alt="Image" />
+                  <img src="assets/images/about/about-3.jpg" alt="About Image 3" />
                 </div>
                 <div class="group-3">
-                  <img src="assets/images/about/about-4.jpg" alt="Image" />
+                  <img src="assets/images/about/about-4.jpg" alt="About Image 4" />
                 </div>
                 <div class="group-shape">
-                  <img src="assets/images/shape/shape-5.svg" alt="Shape" />
+                  <img src="assets/images/shape/shape-5.svg" alt="Shape 5" />
                 </div>
               </div>
             </div>
@@ -427,16 +323,11 @@
                     </p>
                   </div>
                   <div class="tj-progress-bar">
-                    <label>Efficacité de nos Solutions Énergétiques </label>
+                    <label for="energy-efficiency">Efficacité de nos Solutions Énergétiques</label>
                     <div class="skills" data-percent="89%">
                       <span>89%</span>
-                      <div class="skillbar"></div>
+                      <div class="skillbar" id="energy-efficiency"></div>
                     </div>
-                  </div>
-                  <div class="tj-about-button d-flex">
-                    <a class="tj-secondary-btn btn" href="about-us.html"
-                      >En Savoir Plus <i class="flaticon-right-arrow"></i
-                    ></a>
                   </div>
                 </div>
               </div>
@@ -444,527 +335,480 @@
           </div>
         </div>
         <div class="about-sec-shape">
-          <img src="assets/images/shape/shape-6.svg" alt="Shape" />
+          <img src="assets/images/shape/shape-6.svg" alt="Shape 6" />
         </div>
       </section>
       <!--=========== About Section End =========-->
 
       <!--=========== Service Section Start =========-->
-      <section class="tj-service-section-two">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="tj-sec-heading-two">
-                <span class="sub-title">Nos Services</span>
-                <h2 class="title">
-                  Offres Panneaux Solaires pour
-                  <span>Un Monde Vert</span>
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="swiper tj-service-slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="tj-service-item-three">
-                      <div class="service-image">
-                        <img
-                          src="assets/images/service/service-1.jpg"
-                          alt="Image"
-                        />
-                        <div class="service-icon">
-                          <i class="flaticon-environmental"></i>
-                        </div>
-                      </div>
-                      <div class="service-content">
-                        <h5 class="title">
-                          <a href="service-details.html">Étude sur mesure</a>
-                        </h5>
-                        <div class="desc">
-                          <p>
-                            All the Lorem Ipsum generators on the Internet tend
-                            to repeat predefined chunks as necessary, making
-                            words,
-                          </p>
-                        </div>
-                        <div class="read-more">
-                          <a class="read-btn" href="service-details.html"
-                            >Découvrir <i class="flaticon-right-arrow"></i
-                          ></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="tj-service-item-three">
-                      <div class="service-image">
-                        <img
-                          src="assets/images/service/service-2.jpg"
-                          alt="Image"
-                        />
-                        <div class="service-icon">
-                          <i class="flaticon-solar-energy-3"></i>
-                        </div>
-                      </div>
-                      <div class="service-content">
-                        <h5 class="title">
-                          <a href="service-details.html"
-                            >Installation de Panneaux Solaires</a
-                          >
-                        </h5>
-                        <div class="desc">
-                          <p>
-                            All the Lorem Ipsum generators on the Internet tend
-                            to repeat predefined chunks as necessary, making
-                            words,
-                          </p>
-                        </div>
-                        <div class="read-more">
-                          <a class="read-btn" href="service-details.html"
-                            >Découvrir <i class="flaticon-right-arrow"></i
-                          ></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="tj-service-item-three">
-                      <div class="service-image">
-                        <img
-                          src="assets/images/service/service-3.jpg"
-                          alt="Image"
-                        />
-                        <div class="service-icon">
-                          <i class="flaticon-save-energy"></i>
-                        </div>
-                      </div>
-                      <div class="service-content">
-                        <h5 class="title">
-                          <a href="#">Suivi Personnalisé</a>
-                        </h5>
-                        <div class="desc">
-                          <p>
-                            All the Lorem Ipsum generators on the Internet tend
-                            to repeat predefined chunks as necessary, making
-                            words,
-                          </p>
-                        </div>
-                        <div class="read-more">
-                          <a class="read-btn" href="service-details.html"
-                            >Découvrir <i class="flaticon-right-arrow"></i
-                          ></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="service-navigation">
-                  <div class="swiper-button-next"></div>
-                  <div class="swiper-button-prev"></div>
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
-            </div>
-          </div>
+<section class="tj-service-section-two">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="tj-sec-heading-two">
+          <span class="sub-title">Nos Services</span>
+          <h2 class="title">
+            Offres Panneaux Solaires pour
+            <span>Un Monde Vert</span>
+          </h2>
         </div>
-      </section>
-      <!--=========== Service Section End =========-->
-
-      <!--=========== Counter Section Start =========-->
-      <section class="tj-counter-section-two">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
-              <div class="counter-item-three">
-                <div class="counter-icon">
-                  <i class="flaticon-experience"></i>
-                </div>
-                <div class="counter-number">
-                  <div class="tj-count">
-                    <span class="odometer" data-count="10">0</span>+
-                  </div>
-                  <span class="sub-title">Ans d'Expérience</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
-              <div class="counter-item-three">
-                <div class="counter-icon">
-                  <i class="flaticon-completed-task"></i>
-                </div>
-                <div class="counter-number">
-                  <div class="tj-count">
-                    <span class="odometer" data-count="50">0</span>+
-                  </div>
-                  <span class="sub-title">Projets Complétés</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
-              <div class="counter-item-three">
-                <div class="counter-icon">
-                  <i class="flaticon-customer-service"></i>
-                </div>
-                <div class="counter-number">
-                  <div class="tj-count">
-                    <span class="odometer" data-count="48">0</span>+
-                  </div>
-                  <span class="sub-title">Clients Satisfaits</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
-              <div class="counter-item-three">
-                <div class="counter-icon">
-                  <i class="flaticon-timeline"></i>
-                </div>
-                <div class="counter-number">
-                  <div class="tj-count">
-                    <span class="odometer" data-count="20">0</span>+
-                  </div>
-                  <span class="sub-title">Employés</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--=========== Counter Section End =========-->
-
-      <!--=========== Choose-Us Section Start =========-->
-      <section class="tj-choose-us-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="tj-sec-heading-two">
-                <span class="sub-title">Pourquoi Nous ?</span>
-                <h2 class="title">
-                  Bienfaits de l'Économie d'
-                  <span>Énergie</span>
-                </h2>
-                <div class="desc">
-                  <p>
-                    Lorem Ipsum has been the industry's standard dummy text ever
-                    since the 1500s, when an unknown printer took a galley of
-                    type unchanged.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xl-3 col-lg-6 col-md-6">
-              <div class="tj-choose-us-item">
-                <div class="choose-us-top-content">
-                  <div class="choose-us-icon">
-                    <i class="flaticon-reliability"></i>
-                  </div>
-                  <div class="choose-us-text">
-                    <span>01</span>
-                  </div>
-                </div>
-                <h5 class="title">
-                  Qualité et <br />
-                  Fiabilité
-                </h5>
-                <div class="desc">
-                  <p>
-                    It was popularised in the 1960s with the release of Letraset
-                    sheets containing.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-md-6">
-              <div class="tj-choose-us-item">
-                <div class="choose-us-top-content">
-                  <div class="choose-us-icon">
-                    <i class="flaticon-wind-energy"></i>
-                  </div>
-                  <div class="choose-us-text">
-                    <span>02</span>
-                  </div>
-                </div>
-                <h5 class="title">Expertise en Énergie Solaire</h5>
-                <div class="desc">
-                  <p>
-                    It was popularised in the 1960s with the release of Letraset
-                    sheets containing.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-md-6">
-              <div class="tj-choose-us-item">
-                <div class="choose-us-top-content">
-                  <div class="choose-us-icon">
-                    <i class="flaticon-customize"></i>
-                  </div>
-                  <div class="choose-us-text">
-                    <span>03</span>
-                  </div>
-                </div>
-                <h5 class="title">
-                  Solutions <br />
-                  Sur Mesure
-                </h5>
-                <div class="desc">
-                  <p>
-                    It was popularised in the 1960s with the release of Letraset
-                    sheets containing.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-md-6">
-              <div class="tj-choose-us-item">
-                <div class="choose-us-top-content">
-                  <div class="choose-us-icon">
-                    <i class="flaticon-green-power"></i>
-                  </div>
-                  <div class="choose-us-text">
-                    <span>04</span>
-                  </div>
-                </div>
-                <h5 class="title">
-                  Impact <br />
-                  Environnemental
-                </h5>
-                <div class="desc">
-                  <p>
-                    It was popularised in the 1960s with the release of Letraset
-                    sheets containing.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--=========== Choose-Us Section End =========-->
-
-      <!--=========== Work Section Start =========-->
-      <div class="tj-work-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="tj-sec-heading-two text-center">
-                <span class="sub-title">Comment Ça Marche</span>
-                <h2 class="title">
-                  Feuille de Route vers votre
-                  <span>Future Énergie.</span>
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div class="row align-items-center">
-            <div class="col-lg-4 work-left-content">
-              <div class="tj-work-item text-end">
-                <div class="work-icon">
-                  <i class="flaticon-italy"></i>
-                </div>
-                <h5 class="title">Envoi de vos Factures</h5>
-                <div class="desc">
-                  <p>
-                    It was popularised in the 1960s with the release Letraset
-                    containing.
-                  </p>
-                </div>
-              </div>
-              <div class="tj-work-item text-end">
-                <div class="work-icon">
-                  <i class="flaticon-budget"></i>
-                </div>
-                <h5 class="title">Étude Sur Mesure</h5>
-                <div class="desc">
-                  <p>
-                    It was popularised in the 1960s with the release Letraset
-                    containing.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="work-image">
-                <img src="assets/images/project/work-1.jpg" alt="Image" />
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="tj-work-item">
-                <div class="work-icon">
-                  <i class="flaticon-product-lauch"></i>
-                </div>
-                <h5 class="title">Installation des Panneaux Solaires</h5>
-                <div class="desc">
-                  <p>
-                    It was popularised in the 1960s with the release Letraset
-                    containing.
-                  </p>
-                </div>
-              </div>
-              <div class="tj-work-item">
-                <div class="work-icon">
-                  <i class="flaticon-continuous-improvement"></i>
-                </div>
-                <h5 class="title">Suivi Personnalisé</h5>
-                <div class="desc">
-                  <p>
-                    It was popularised in the 1960s with the release Letraset
-                    containing.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--=========== Work Section End =========-->
-    <!-- start: Footer Area -->
-    <footer
-      class="tj-footer-area tj-footer-two"
-      data-bg-image="assets/images/banner/footer-bg.jpg"
-    >
-      <div class="footer-top-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-4">
-                  <div class="footer-widget footer1-col-1">
-                    <div class="footer-info">
-                      <div class="footer-logo">
-                        <a href="index.html">
-                          <img src="assets/images/logos/main-logo.png" alt="Logo" />
-                        </a>
-                      </div>
-
-                      <div class="footer-share">
-                        <ul>
-                          <li>
-                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4">
-                  <div class="footer-widget footer1-col-2 widget_nav_menu">
-                    <div class="footer-title">
-                      <h5 class="title">Liens</h5>
-                    </div>
-                    <div class="footer-menu">
-                      <ul>
-                        <li><a href="#">Accueil</a></li>
-                        <li><a href="#">Panneaux Solaires</a></li>
-                        <li><a href="#">Qui sommes nous?</a></li>
-                        <li><a href="#">Blog</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4">
-                  <div class="footer-widget footer1-col-3">
-                    <div class="footer-title">
-                      <h5 class="title">Nous Contacter</h5>
-                    </div>
-                    <div class="footer-contact">
-                      <ul>
-                        <li>
-                          <i class="flaticon-open"></i
-                          ><a href="mailto:solarplus@gmail.com">SunSolarTeck@gmail.com</a>
-                          <a href="mailto:infosolarplus@gmail.com">infoSunSolarTeck@gmail.com</a>
-                        </li>
-                        <li>
-                          <i class="flaticon-location"></i> 4, Rue Ambroise Croizat, 66330 Cabestany
-                        </li>
-                        <li>
-                          <i class="flaticon-phone"></i
-                          ><a href="tel:(1234)5678900">07 25 68 48 25</a>
-                          <a class="d-block" href="tel:1234567890000">04 58 48 69 36</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </div>
-      </div>
-      <div class="tj-copyright-area">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="copyright-content-ara">
-                <div class="copyright-text">
-                  <p>
-                    2024
-                    <a href="#" target="_blank"> Sun Solar Teck </a> 
-                  </p>
-                </div>
-                <div class="copyright-menu">
-                  <ul>
-                    <li><a href="#">Mentions Légales</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Support</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- start: Footer Area -->
-
-    <!-- start: Scroll Area -->
-    <div class="solar-scroll-top">
-      <svg
-        class="progress-circle svg-content"
-        width="100%"
-        height="100%"
-        viewBox="-1 -1 102 102"
-      >
-        <path
-          d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
-          style="
-            transition: stroke-dashoffset 10ms linear 0s;
-            stroke-dasharray: 307.919px, 307.919px;
-            stroke-dashoffset: 71.1186px;
-          "
-        ></path>
-      </svg>
-      <div class="solar-scroll-top-icon">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-          role="img"
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          data-icon="mdi:arrow-up"
-          class="iconify iconify--mdi"
-        >
-          <path
-            fill="currentColor"
-            d="M13 20h-2V8l-5.5 5.5l-1.42-1.42L12 4.16l7.92 7.92l-1.42 1.42L13 8v12Z"
-          ></path>
-        </svg>
       </div>
     </div>
-    <!-- end: Scroll Area -->
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="swiper tj-service-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="tj-service-item-three">
+                <div class="service-image">
+                  <img
+                    src="assets/images/service/service-1.jpg"
+                    alt="Étude sur mesure"
+                  />
+                  <div class="service-icon">
+                    <i class="flaticon-environmental"></i>
+                  </div>
+                </div>
+                <div class="service-content">
+                  <h5 class="title">
+                    <a href="service-details.html">Étude sur mesure</a>
+                  </h5>
+                  <div class="desc">
+                    <p>
+                      Nous fournissons des études personnalisées pour répondre
+                      aux besoins spécifiques de chaque client, garantissant une
+                      solution optimale pour chaque projet.
+                    </p>
+                  </div>
+                  <div class="read-more">
+                    <a class="read-btn" href="service-details.html">
+                      Découvrir <i class="flaticon-right-arrow"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="tj-service-item-three">
+                <div class="service-image">
+                  <img
+                    src="assets/images/service/service-2.webp"
+                    alt="Installation de Panneaux Solaires"
+                  />
+                  <div class="service-icon">
+                    <i class="flaticon-solar-energy-3"></i>
+                  </div>
+                </div>
+                <div class="service-content">
+                  <h5 class="title">
+                    <a href="service-details.html">
+                      Installation de Panneaux Solaires
+                    </a>
+                  </h5>
+                  <div class="desc">
+                    <p>
+                      Nos experts installent des panneaux solaires avec
+                      précision et efficacité, garantissant des performances
+                      maximales et une longue durée de vie.
+                    </p>
+                  </div>
+                  <div class="read-more">
+                    <a class="read-btn" href="service-details.html">
+                      Découvrir <i class="flaticon-right-arrow"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="tj-service-item-three">
+                <div class="service-image">
+                  <img
+                    src="assets/images/service/service-3.jpg"
+                    alt="Suivi Personnalisé"
+                  />
+                  <div class="service-icon">
+                    <i class="flaticon-save-energy"></i>
+                  </div>
+                </div>
+                <div class="service-content">
+                  <h5 class="title">
+                    <a href="service-details.html">Suivi Personnalisé</a>
+                  </h5>
+                  <div class="desc">
+                    <p>
+                      Nous assurons un suivi continu pour garantir la satisfaction
+                      de nos clients et optimiser les performances des systèmes
+                      installés.
+                    </p>
+                  </div>
+                  <div class="read-more">
+                    <a class="read-btn" href="service-details.html">
+                      Découvrir <i class="flaticon-right-arrow"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service-navigation">
+            <div class="swiper-button-next" aria-label="Next Slide"></div>
+            <div class="swiper-button-prev" aria-label="Previous Slide"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--=========== Service Section End =========-->
 
-    <!-- JS here -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/odometer.min.js"></script>
-    <script src="assets/js/swiper.min.js"></script>
-    <script src="assets/js/magnific-popup.js"></script>
-    <script src="assets/js/imagesloaded-pkgd.js"></script>
-    <script src="assets/js/meanmenu.js"></script>
-    <script src="assets/js/main.js"></script>
+<!--=========== Counter Section Start =========-->
+<section class="tj-counter-section-two">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+        <div class="counter-item-three">
+          <div class="counter-icon">
+            <i class="flaticon-experience"></i>
+          </div>
+          <div class="counter-number">
+            <div class="tj-count">
+              <span class="odometer" data-count="10">0</span>+
+            </div>
+            <span class="sub-title">Ans d'Expérience</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+        <div class="counter-item-three">
+          <div class="counter-icon">
+            <i class="flaticon-completed-task"></i>
+          </div>
+          <div class="counter-number">
+            <div class="tj-count">
+              <span class="odometer" data-count="50">0</span>+
+            </div>
+            <span class="sub-title">Projets Complétés</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+        <div class="counter-item-three">
+          <div class="counter-icon">
+            <i class="flaticon-customer-service"></i>
+          </div>
+          <div class="counter-number">
+            <div class="tj-count">
+              <span class="odometer" data-count="48">0</span>+
+            </div>
+            <span class="sub-title">Clients Satisfaits</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+        <div class="counter-item-three">
+          <div class="counter-icon">
+            <i class="flaticon-timeline"></i>
+          </div>
+          <div class="counter-number">
+            <div class="tj-count">
+              <span class="odometer" data-count="20">0</span>+
+            </div>
+            <span class="sub-title">Employés</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--=========== Counter Section End =========-->
+
+      <!--=========== Choose-Us Section Start =========-->
+<section class="tj-choose-us-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="tj-sec-heading-two">
+          <span class="sub-title">Pourquoi Nous ?</span>
+          <h2 class="title">
+            Bienfaits de l'Économie d'
+            <span>Énergie</span>
+          </h2>
+          <div class="desc">
+            <p>
+              Découvrez pourquoi nous sommes le choix idéal pour vos besoins en énergie solaire. Nos solutions sont conçues pour offrir des avantages durables et significatifs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-3 col-lg-6 col-md-6">
+        <div class="tj-choose-us-item">
+          <div class="choose-us-top-content">
+            <div class="choose-us-icon">
+              <i class="flaticon-reliability"></i>
+            </div>
+            <div class="choose-us-text">
+              <span>01</span>
+            </div>
+          </div>
+          <h5 class="title">
+            Qualité et <br />
+            Fiabilité
+          </h5>
+          <div class="desc">
+            <p>
+              Nous garantissons des solutions fiables et de haute qualité, validées par des années d'expérience et de succès dans l'industrie.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-6">
+        <div class="tj-choose-us-item">
+          <div class="choose-us-top-content">
+            <div class="choose-us-icon">
+              <i class="flaticon-wind-energy"></i>
+            </div>
+            <div class="choose-us-text">
+              <span>02</span>
+            </div>
+          </div>
+          <h5 class="title">Expertise en Énergie Solaire</h5>
+          <div class="desc">
+            <p>
+              Nos experts possèdent une vaste expérience et des connaissances approfondies dans le domaine de l'énergie solaire, assurant les meilleures solutions pour vous.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-6">
+        <div class="tj-choose-us-item">
+          <div class="choose-us-top-content">
+            <div class="choose-us-icon">
+              <i class="flaticon-customize"></i>
+            </div>
+            <div class="choose-us-text">
+              <span>03</span>
+            </div>
+          </div>
+          <h5 class="title">
+            Solutions <br />
+            Sur Mesure
+          </h5>
+          <div class="desc">
+            <p>
+              Nous adaptons nos solutions pour répondre spécifiquement à vos besoins uniques, garantissant des performances optimales et une satisfaction totale.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-6">
+        <div class="tj-choose-us-item">
+          <div class="choose-us-top-content">
+            <div class="choose-us-icon">
+              <i class="flaticon-green-power"></i>
+            </div>
+            <div class="choose-us-text">
+              <span>04</span>
+            </div>
+          </div>
+          <h5 class="title">
+            Impact <br />
+            Environnemental
+          </h5>
+          <div class="desc">
+            <p>
+              Nos solutions contribuent à la protection de l'environnement en réduisant les émissions de carbone et en promouvant l'utilisation d'énergies renouvelables.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--=========== Choose-Us Section End =========-->
+
+<!--=========== Work Section Start =========-->
+<div class="tj-work-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="tj-sec-heading-two text-center">
+          <span class="sub-title">Comment Ça Marche</span>
+          <h2 class="title">
+            Feuille de Route vers votre
+            <span>Future Énergie.</span>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-lg-4 work-left-content">
+        <div class="tj-work-item text-end">
+          <div class="work-icon">
+            <i class="flaticon-italy"></i>
+          </div>
+          <h5 class="title">Envoi de vos Factures</h5>
+          <div class="desc">
+            <p>
+              Envoyez-nous vos factures d'électricité pour que nous puissions analyser vos besoins énergétiques et proposer des solutions personnalisées.
+            </p>
+          </div>
+        </div>
+        <div class="tj-work-item text-end">
+          <div class="work-icon">
+            <i class="flaticon-budget"></i>
+          </div>
+          <h5 class="title">Étude Sur Mesure</h5>
+          <div class="desc">
+            <p>
+              Nous effectuons une étude détaillée de vos besoins et proposons une solution sur mesure adaptée à votre situation.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="work-image">
+          <img src="assets/images/project/work-1.jpg" alt="Travail d'installation" />
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="tj-work-item">
+          <div class="work-icon">
+            <i class="flaticon-product-lauch"></i>
+          </div>
+          <h5 class="title">Installation des Panneaux Solaires</h5>
+          <div class="desc">
+            <p>
+              Nos experts procèdent à l'installation des panneaux solaires, assurant une mise en place rapide et efficace.
+            </p>
+          </div>
+        </div>
+        <div class="tj-work-item">
+          <div class="work-icon">
+            <i class="flaticon-continuous-improvement"></i>
+          </div>
+          <h5 class="title">Suivi Personnalisé</h5>
+          <div class="desc">
+            <p>
+              Nous offrons un suivi personnalisé pour garantir la performance continue de votre installation solaire.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--=========== Work Section End =========-->
+    <!-- start: Footer Area -->
+<footer
+class="tj-footer-area tj-footer-two"
+style="background-image: url('assets/images/banner/footer-bg.jpg');"
+>
+<div class="footer-top-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-4 col-lg-4 col-md-4">
+        <div class="footer-widget footer1-col-1">
+          <div class="footer-info">
+            <div class="footer-logo">
+              <a href="index.html">
+                <img src="assets/images/logos/main-logo.png" alt="Logo Sun Solar Tek" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4">
+        <div class="footer-widget footer1-col-2 widget_nav_menu">
+          <div class="footer-title">
+            <h5 class="title">Liens</h5>
+          </div>
+          <div class="footer-menu">
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="services.html">Panneaux Solaires</a></li>
+              <li><a href="about-us.html">Qui sommes nous?</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-4">
+        <div class="footer-widget footer1-col-3">
+          <div class="footer-title">
+            <h5 class="title">Nous Contacter</h5>
+          </div>
+          <div class="footer-contact">
+            <ul>
+              <li>
+                <i class="flaticon-open"></i>
+                <a href="mailto:SunSolarTeck@gmail.com">SunSolarTeck@gmail.com</a>
+                <a href="mailto:infoSunSolarTeck@gmail.com">infoSunSolarTeck@gmail.com</a>
+              </li>
+              <li>
+                <i class="flaticon-location"></i> 4, Rue Ambroise Croizat, 66330 Cabestany
+              </li>
+              <li>
+                <i class="flaticon-phone"></i>
+                <a href="tel:+33725684825">07 25 68 48 25</a>
+                <a class="d-block" href="tel:+33458486936">04 58 48 69 36</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</footer>
+<!-- end: Footer Area -->
+
+<!-- start: Scroll Area -->
+<div class="solar-scroll-top">
+<svg
+  class="progress-circle svg-content"
+  width="100%"
+  height="100%"
+  viewBox="-1 -1 102 102"
+>
+  <path
+    d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+    style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919px, 307.919px; stroke-dashoffset: 71.1186px;"
+  ></path>
+</svg>
+<div class="solar-scroll-top-icon">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+    role="img"
+    width="1em"
+    height="1em"
+    viewBox="0 0 24 24"
+    data-icon="mdi:arrow-up"
+    class="iconify iconify--mdi"
+  >
+    <path
+      fill="currentColor"
+      d="M13 20h-2V8l-5.5 5.5l-1.42-1.42L12 4.16l7.92 7.92l-1.42 1.42L13 8v12Z"
+    ></path>
+  </svg>
+</div>
+</div>
+<!-- end: Scroll Area -->
+
+<!-- JS here -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/odometer.min.js"></script>
+<script src="assets/js/swiper.min.js"></script>
+<script src="assets/js/magnific-popup.js"></script>
+<script src="assets/js/imagesloaded-pkgd.js"></script>
+<script src="assets/js/meanmenu.js"></script>
+<script src="assets/js/main.js"></script>
   </body>
 </html>
