@@ -3724,15 +3724,17 @@ START: Theme Hero CSS
     linear,
     left,
     right,
-    color-stop(0%, rgba(3, 9, 13, 0.8)),
-    /* More opaque on the left */ color-stop(100%, rgba(50, 60, 69, 0.05))
-      /* Less opaque on the right */
+    color-stop(0%, rgba(3, 9, 13, 0.9)),
+    /* More opaque on the left */ color-stop(50%, rgba(50, 60, 69, 0.3)),
+    /* Less opaque in the middle */ color-stop(100%, rgba(50, 60, 69, 0.05))
+      /* Even less opaque on the right */
   );
   background: linear-gradient(
     90deg,
-    rgba(3, 9, 13, 0.8) 0%,
-    /* More opaque on the left */ rgba(50, 60, 69, 0.05) 100%
-      /* Less opaque on the right */
+    rgba(3, 9, 13, 0.9) 0%,
+    /* More opaque on the left */ rgba(50, 60, 69, 0.3) 50%,
+    /* Less opaque in the middle */ rgba(50, 60, 69, 0.05) 100%
+      /* Even less opaque on the right */
   );
   z-index: 2;
 }
