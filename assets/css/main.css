@@ -38,7 +38,7 @@
   --tj-color-common-black: #000000;
   --tj-color-heading-primary: #323c45;
   --tj-color-text-body: #717171;
-  --tj-color-theme-primary: #ecb00a;
+  --tj-color-theme-primary: #e0bf03;
   --tj-color-theme-secondary: #323c45;
   --tj-color-theme-bg: #fafafc;
   --tj-color-grey-1: #bdc5ca;
@@ -3013,7 +3013,7 @@ START: Theme Heading CSS
 .tj-sec-heading .sec-title {
   color: var(--tj-color-theme-primary);
   margin-bottom: 30px;
-  font-size: 70px;
+  font-size: 58px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px),
   only screen and (min-width: 576px) and (max-width: 767px) {
@@ -3722,16 +3722,17 @@ START: Theme Hero CSS
   height: 100%;
   background: -webkit-gradient(
     linear,
-    left bottom,
-    left top,
-    color-stop(25%, rgba(3, 9, 13, 0.6)),
-    /* Reduced opacity */ color-stop(60%, rgba(50, 60, 69, 0.6))
-      /* Reduced opacity */
+    left,
+    right,
+    color-stop(0%, rgba(3, 9, 13, 0.8)),
+    /* More opaque on the left */ color-stop(100%, rgba(50, 60, 69, 0.05))
+      /* Less opaque on the right */
   );
   background: linear-gradient(
-    360deg,
-    rgba(3, 9, 13, 0.6) 25%,
-    /* Reduced opacity */ rgba(50, 60, 69, 0.6) 60% /* Reduced opacity */
+    90deg,
+    rgba(3, 9, 13, 0.8) 0%,
+    /* More opaque on the left */ rgba(50, 60, 69, 0.05) 100%
+      /* Less opaque on the right */
   );
   z-index: 2;
 }
@@ -3772,7 +3773,7 @@ START: Theme Hero CSS
 .tj-hero-section .tj-sec-heading .sec-title span {
   color: var(--tj-color-theme-primary);
   font-weight: bold;
-  font-size: 90px;
+  font-size: 79px;
   padding-left: 0;
 }
 .tj-hero-section .tj-sec-heading .sec-title span::before {
