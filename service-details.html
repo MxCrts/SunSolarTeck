@@ -211,10 +211,13 @@
                       <a href="index.html">Accueil</a>
                     </li>
                     <li class="has-dropdown">
-                      <a href="services.html">Panneaux Solaires</a>
+                      <a href="project-details.html">Panneaux Solaires</a>
                       <ul class="sub-menu">
                         <li>
-                          <a href="services.html">Nos offres</a>
+                          <a href="project-details.html">Notre Offre</a>
+                        </li>
+                        <li>
+                          <a href="services.html">Votre Maison</a>
                         </li>
                         <li>
                           <a href="service-details.html">Étude Sur Mesure</a>
@@ -306,9 +309,6 @@
                       ci-contre en ajoutant vos factures d'électricité. Nous
                       nous occupons du reste. Alors, décidé à économiser?
                     </p>
-                    <p style="color: black; font-size: smaller">
-                      * Financement possible<br />
-                    </p>
                   </div>
                   <div class="counter-wrapper">
                     <img
@@ -327,7 +327,7 @@
                     <h3 class="title">Formulaire Estimation</h3>
                   </div>
                   <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-12">
                       <div class="form-input">
                         <input
                           type="text"
@@ -335,10 +335,60 @@
                           name="phone"
                           placeholder="Téléphone..."
                           required
+                          style="margin-bottom: 10px"
                         />
                       </div>
                     </div>
-
+                    <div class="col-lg-12">
+                      <div class="form-input">
+                        <label
+                          for="disponibilite"
+                          style="
+                            font-weight: bold;
+                            display: block;
+                            margin-bottom: 5px;
+                          "
+                          >Disponibilité</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-input">
+                        <input
+                          type="date"
+                          id="preferred-date"
+                          name="preferred-date"
+                          placeholder="Date préférée..."
+                          required
+                          style="
+                            margin-bottom: 10px;
+                            width: 100%;
+                            padding: 10px;
+                            border: 1px solid #ccc;
+                            border-radius: 5px;
+                          "
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-input">
+                        <input
+                          type="time"
+                          id="preferred-time"
+                          name="preferred-time"
+                          placeholder="Heure préférée..."
+                          required
+                          min="08:00"
+                          max="20:00"
+                          style="
+                            width: 100%;
+                            padding: 10px;
+                            border: 1px solid #ccc;
+                            border-radius: 5px;
+                          "
+                        />
+                      </div>
+                    </div>
                     <div class="col-lg-12">
                       <div class="form-input">
                         <textarea
@@ -346,13 +396,14 @@
                           name="message"
                           placeholder="Message...."
                           required
+                          style="margin-bottom: 10px"
                         ></textarea>
                       </div>
                     </div>
                     <div class="col-lg-12">
                       <div class="form-input">
                         <label for="files" class="form-label"
-                          >Ajouter des fichiers (jusqu'à 5 fichiers):</label
+                          >Votre Facture EDF:</label
                         >
                         <input
                           type="file"

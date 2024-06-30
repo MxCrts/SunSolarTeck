@@ -2081,11 +2081,12 @@ START: Theme Header CSS
   z-index: 99;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  background-color: #3498db;
+  background-color: rgba(50, 60, 69, 0.8);
 }
 .tj-header-area .tj-top-content-area {
   padding: 10px 0;
   border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+  background-color: rgba(50, 60, 69, 0.8);
 }
 @media only screen and (min-width: 768px) and (max-width: 991px),
   only screen and (min-width: 576px) and (max-width: 767px),
@@ -2104,7 +2105,7 @@ START: Theme Header CSS
 }
 .tj-header-area.sticky {
   position: fixed;
-  padding: 15px 0;
+  padding: 0px 0;
   background: var(--tj-color-theme-secondary);
   -webkit-animation: sticky 0.9s;
   animation: sticky 0.9s;
@@ -2149,7 +2150,7 @@ START: Theme Header CSS
 }
 .tj-header-area.sticky {
   position: fixed;
-  padding: 15px 0;
+  padding: 0px 0;
   background: var(--tj-color-theme-secondary);
   -webkit-animation: sticky 0.9s;
   animation: sticky 0.9s;
@@ -10979,13 +10980,13 @@ START: Theme Project CSS
   z-index: 1;
 }
 .tj-project-item .project-image img {
-  width: 100%;
+  width: 50%;
 }
 .tj-project-item .project-image::before {
   position: absolute;
   content: "";
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   left: 0;
   top: 0;
   background: -webkit-gradient(
